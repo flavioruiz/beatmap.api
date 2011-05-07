@@ -1,0 +1,10 @@
+Library : beatmap.api
+Author  : marshall@topspinmedia.com
+Homepage: http://www.github.com
+Copyright (c) 2011 Topspin Media, Inc.
+
+
+This library allows the user to get the URL to buy music by querying multiple
+music purchasing sites such as Amazon and iTunes. This library uses Rovi to
+lookup the artist and album ids from AllMusicGuide and then query the other
+APIs to generate these purchase links.
