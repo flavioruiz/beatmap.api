@@ -1,8 +1,9 @@
 Library : beatmap.api
 Author  : marshall@topspinmedia.com
-Homepage: http://www.github.com
-Copyright (c) 2011 Topspin Media, Inc.
+Homepage: https://github.com/topspin/beatmap.api
+License : FreeBSD License
 
+Description:
 
 This library allows the user to get the URL to buy music by querying multiple
 music purchasing sites such as Amazon and iTunes. This library uses Rovi to
