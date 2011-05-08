@@ -12,7 +12,7 @@ class Base
     end
   end
 
-  def initialize(config)
+  def initialize(config={})
     @config = config
   end
 end

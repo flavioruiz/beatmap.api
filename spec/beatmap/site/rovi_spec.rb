@@ -7,7 +7,7 @@ module Site
 
 describe Rovi do
 
-  before(:each) do
+  before(:all) do
     @rovi = Rovi.new({
       :url         => 'http://api.rovicorp.com',
       :key         => 'a26838bw349af7752zr796a7',

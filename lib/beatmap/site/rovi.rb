@@ -83,4 +83,5 @@ bm = Beatmap::Site::Rovi.new({
 })
 
 p bm.find_album_by_name('Hot Sauce Committee', 'Beastie Boys')
+# p bm.find_artist_by_name('Violens')
 end
