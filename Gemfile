@@ -1,5 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'minitest'
+gem 'rspec'
 gem 'wrong'
-gem 'mocha'
+gem 'httparty'
