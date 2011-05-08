@@ -30,8 +30,8 @@ class Rovi < Base
     self.class.get(@config[:url] + '/data/v1/album/info', :query => params)['album']
   end
 
-  def find_album_by_name(artist, album)
-    results = search(artist, 'album')
+  def find_album_by_name(album, artist)
+    results = search(album, 'album')
 
     results.each do |result|
       album_title = result['album']['title']
@@ -57,7 +57,6 @@ class Rovi < Base
 
     results.each do |result|
       artist_name = result['name']['name']
-
       next unless artist_name.match(artist)
 
       amg_artist_id = result['name']['ids']['amgPopId']
@@ -82,4 +81,6 @@ bm = Beatmap::Site::Rovi.new({
   :key         => 'a26838bw349af7752zr796a7',
   :secret      => 'YGvUSeMXx8'
 })
+
+p bm.find_album_by_name('Hot Sauce Committee', 'Beastie Boys')
 end
